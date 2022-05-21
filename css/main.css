@@ -570,6 +570,64 @@ header nav ul li i:hover {
 
 /* End Portfolio */
 
+/* Start Achievements */
+
+.achiev {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.achiev h2 {
+    margin: 30px auto 10px;
+}
+
+.achiev p {
+    text-align: center;
+    color: var(--text-color, #0c0c0c);
+    margin-bottom: 70px;
+}
+
+.achiev .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+@media (max-width: 350px) {
+    .achiev .container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+.achiev .container .box {
+    text-align: center;
+    color: var(--text-color, #0c0c0c);
+    border: 1px solid var(--main-color, #0fcfdc);
+    width: 275px;
+    max-width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 35px 15px 35px;
+    margin: 0 auto;
+}
+
+.achiev .box img {
+    max-width: 100%;
+}
+
+.achiev .box h2 {
+    font-size: 32px;
+}
+
+.achiev .box h6 {
+    font-size: 18px;
+}
+
+/* End Achievements */
+
 /* Start Animation */
 
 @keyframes rotate {
