@@ -148,10 +148,12 @@ header nav ul {
         right: -10px;
         padding: 10px 20px;
         opacity: 0;
+        z-index: -1;
     }
 
     header nav .menu:hover ul {
         opacity: 1;
+        z-index: 1;
     }
 }
 
@@ -240,3 +242,115 @@ header nav ul li i:hover {
 }
 
 /* End Header */
+
+/* Start Landing */
+
+.landing {
+    background-image: url(../photos/hero-bg.png);
+    background-size: cover;
+    min-height: calc(136vh - 80px);
+}
+
+@media (max-width: 768px) {
+    .landing {
+        min-height: auto;
+    }
+}
+
+.landing .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .landing .content {
+        flex-direction: column;
+    }
+}
+
+.landing .content .text {
+    padding: 100px 30px 30px 90px;
+    color: #3b3a3a;
+}
+
+@media (max-width: 991px) {
+    .landing .content .text {
+        padding: 100px 30px 30px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .landing .content .text {
+        padding: 100px 30px 30px 30px
+    }
+}
+
+.landing .text h1 {
+    font-size: 40px;
+    width: 60%;
+}
+
+@media (max-width: 768px) {
+    .landing .text h1 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.landing .text p {
+    line-height: 1.7;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .landing .text p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.landing .text .buttons {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .landing .text .buttons {
+        justify-content: center;
+    }
+}
+
+.landing .text .buttons a {
+    display: block;
+    width: fit-content;
+    margin-right: 15px;
+    background-color: var(--main-color, #0fcfdc);
+    padding: 10px 25px;
+    color: white;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    text-transform: capitalize
+}
+
+.landing .text .buttons a:not(a.qu):hover {
+    background-color: #0db9c4;
+}
+
+.landing .text .buttons a.qu {
+    background-color: black;
+    padding: 10px 15px;
+}
+
+.landing .text .buttons a.qu:hover {
+    background-color: #333333;
+}
+
+.landing .content .image img {
+    width: 100%;
+}
+
+/* End Landing */
