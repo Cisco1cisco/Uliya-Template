@@ -70,7 +70,7 @@ h2.main-title {
     text-align: center;
     text-transform: uppercase;
     width: fit-content;
-    margin: 30px auto;
+    margin: 10px auto;
     position: relative;
 }
 
@@ -91,6 +91,12 @@ h2.main-title::after {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     width: 35px;
+}
+
+h2.main-title+p {
+    text-align: center;
+    color: var(--text-color, #0c0c0c);
+    margin-bottom: 50px;
 }
 
 @media (max-width: 350px) {
@@ -430,6 +436,10 @@ header nav ul li i:hover {
     padding-bottom: 100px;
 }
 
+.about h2 {
+    margin-bottom: 50px;
+}
+
 .about .image {
     width: 250px;
     margin: 50px auto;
@@ -475,16 +485,6 @@ header nav ul li i:hover {
 .portfolio {
     padding-top: 100px;
     padding-bottom: 100px;
-}
-
-.portfolio h2 {
-    margin: 30px auto 10px;
-}
-
-.portfolio p {
-    text-align: center;
-    color: var(--text-color, #0c0c0c);
-    margin-bottom: 50px;
 }
 
 .portfolio .container {
@@ -577,16 +577,6 @@ header nav ul li i:hover {
     padding-bottom: 100px;
 }
 
-.achiev h2 {
-    margin: 30px auto 10px;
-}
-
-.achiev p {
-    text-align: center;
-    color: var(--text-color, #0c0c0c);
-    margin-bottom: 70px;
-}
-
 .achiev .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -627,6 +617,90 @@ header nav ul li i:hover {
 }
 
 /* End Achievements */
+
+/* Start Testimonial */
+
+.testimonial {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.testimonial .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .testimonial .container {
+        flex-direction: column;
+    }
+}
+
+.testimonial .text {
+    flex-basis: 65%;
+    border: 1px solid var(--main-color, #0fcfdc);
+    padding: 20px;
+    color: var(--text-color, #0c0c0c);
+}
+
+@media (max-width: 768px) {
+    .testimonial .text {
+        order: 1;
+        margin-bottom: 40px;
+    }
+}
+
+.testimonial .text h4 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.testimonial .text p {
+    line-height: 1.7;
+}
+
+.testimonial .arrows {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .testimonial .arrows {
+        order: 2;
+    }
+}
+
+.testimonial .arrows .arrow {
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color, #0fcfdc);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+.testimonial .arrows .arrow:hover {
+    background-color: black;
+}
+
+/* End Testimonial */
 
 /* Start Animation */
 
