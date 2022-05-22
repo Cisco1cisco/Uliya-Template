@@ -536,6 +536,12 @@ header nav ul li i:hover {
     width: 100%;
 }
 
+@media (min-width: 560px) and (max-width: 768px) {
+    .portfolio .container .right>.image img {
+        width: 513px;
+    }
+}
+
 .portfolio .container .image .overlay {
     position: absolute;
     top: 0;
