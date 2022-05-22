@@ -4,6 +4,7 @@
     --main-color: #0fcfdc;
     --text-color: #0c0c0c;
     --trans-dur: 0.3s;
+    --section-padd: 100px;
 }
 
 /* End Variables */
@@ -432,8 +433,8 @@ header nav ul li i:hover {
 /* Start About */
 
 .about {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-padd, 100px);
+    padding-bottom: var(--section-padd, 100px);
 }
 
 .about h2 {
@@ -483,8 +484,8 @@ header nav ul li i:hover {
 /* Start Portfolio */
 
 .portfolio {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-padd, 100px);
+    padding-bottom: var(--section-padd, 100px);
 }
 
 .portfolio .container {
@@ -573,8 +574,8 @@ header nav ul li i:hover {
 /* Start Achievements */
 
 .achiev {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-padd, 100px);
+    padding-bottom: var(--section-padd, 100px);
 }
 
 .achiev .container {
@@ -621,8 +622,8 @@ header nav ul li i:hover {
 /* Start Testimonial */
 
 .testimonial {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-padd, 100px);
+    padding-bottom: var(--section-padd, 100px);
 }
 
 .testimonial .container {
@@ -705,8 +706,8 @@ header nav ul li i:hover {
 /* Start Contact */
 
 .contact {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-padd, 100px);
+    padding-bottom: var(--section-padd, 100px);
     background-image: url(../photos/contact-bg.png);
     background-repeat: no-repeat;
     background-position: left bottom;
